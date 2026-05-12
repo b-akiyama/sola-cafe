@@ -37,6 +37,12 @@ body {
   z-index: 10;
 }
 
+.hero-text h1 {
+  font-size: clamp(40px, 5vw, 72px);
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
 .logo h1 {
   color: white;
   margin: 0;
@@ -98,7 +104,7 @@ nav a:hover {
 }
 
 .hero-text h1 {
-  font-size: clamp(32px, 5vw, 72px);
+  font-size: clamp(40px, 5vw, 72px);
   line-height: 1.5;
   margin: 20px 0;
 }
@@ -137,7 +143,7 @@ nav a:hover {
 }
 
 .about-text h2 {
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1.7;
   margin-bottom: 30px;
 }
@@ -161,7 +167,7 @@ nav a:hover {
 }
 
 .menu h2 {
-  font-size: 40px;
+  font-size: 24px;
   margin-bottom: 60px;
 }
 
@@ -204,6 +210,12 @@ nav a:hover {
   padding: 50px 10%;
 }
 
+.space h2 {
+  font-size: 24px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
 .space-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -240,6 +252,11 @@ nav a:hover {
   align-items: center;
 }
 
+.access h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
 .access-info {
   line-height: 2.2;
   max-width: 400px;
@@ -253,10 +270,13 @@ nav a:hover {
     linear-gradient(45deg, transparent 48%, #ddd 49%, #ddd 51%, transparent 52%),
     linear-gradient(-45deg, transparent 48%, #ddd 49%, #ddd 51%, transparent 52%),
     #f5f1ea;
+
   background-size: 80px 80px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   color: #2b211b;
 }
 
@@ -279,6 +299,10 @@ nav a:hover {
   text-align: left;
 }
 
+.contact h2 {
+  font-size: 24px;
+}
+
 .contact-message {
   font-size: 15px;
   line-height: 2.2;
@@ -291,6 +315,7 @@ nav a:hover {
   max-width: 520px;
   margin-left: 0;
   margin-right: auto;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -344,7 +369,7 @@ nav a:hover {
 }
 
 .footer h2 {
-  font-size: 32px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
@@ -367,23 +392,25 @@ nav a:hover {
 
 /* SMARTPHONE */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
+
   .header {
-    padding: 20px;
+    padding: 18px 24px;
   }
 
   .logo h1 {
-    font-size: 28px;
+    font-size: 24px;
+    color: white;
   }
 
   .logo p {
-    font-size: 12px;
+    display: none;
   }
 
-   .hero-text {
+  .hero-text {
+    top: 62%;
     left: 24px;
     right: 24px;
-    top: 65%;
   }
 
   .tagline {
@@ -391,18 +418,18 @@ nav a:hover {
   }
 
   .hero-text h1 {
-    font-size: 32px;
+    font-size: 28px;
+    line-height: 1.6;
+    margin: 0;
   }
 
   .hero-text p {
-    font-size: 14px;
+    display: none;
   }
 
   .hero-text a {
     display: none;
   }
-
-
 
   .about,
   .menu,
